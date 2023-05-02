@@ -7,4 +7,6 @@ payload:
   - IP-CIDR,188.114.97.0/24
   - IP-CIDR,188.114.98.0/24
   - IP-CIDR,188.114.99.0/24
+  - IP-CIDR6,2606:4700:d0::/48
+  - IP-CIDR6,2606:4700:d1::/48
   - DOMAIN-SUFFIX,engage.cloudflareclient.com
