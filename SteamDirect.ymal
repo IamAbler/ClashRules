@@ -16,6 +16,7 @@ payload:
   - DOMAIN-SUFFIX,pdl.wow.battlenet.com.cn
   - DOMAIN,steamcdn-a.akamaihd.net
   - DOMAIN,dl.steam.clngaa.com
+  - DOMAIN-SUFFIX,dl.steam.clngaa.com
   - DOMAIN,st.dl.eccdnx.com
   - DOMAIN-SUFFIX,cm.steampowered.com
   - DOMAIN-SUFFIX,steamserver.net
