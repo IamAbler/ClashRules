@@ -63,3 +63,4 @@ payload:
   - DOMAIN-REGEX,^cdn\d-epicgames-\d+\.file\.myqcloud\.com$
   - DOMAIN-REGEX,^epicgames-download\d\.akamaized\.net$
   - DOMAIN-REGEX,^epicgames-download\d-\d+\.file\.myqcloud\.com$
+  - DST-PORT,22
