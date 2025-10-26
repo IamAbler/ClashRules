@@ -2,9 +2,9 @@
 #!desc= 自用N in 1模块
 
 [Rule]
-DOMAIN-SUFFIX,exhentai.org," 美国标准 IEPL 专线 3",extended-matching
-DOMAIN-SUFFIX,hath.network," 美国实验性 IEPL 专线 1" // Added for: zueejfw.ncvjvrxvkauq.hath.network:11443
-DOMAIN-SUFFIX,e-hentai.org," 美国标准 IEPL 专线 3" // Added for: e-hentai.org:443
+DOMAIN-SUFFIX,exhentai.org,"US",extended-matching
+DOMAIN-SUFFIX,hath.network,"US" // Added for: zueejfw.ncvjvrxvkauq.hath.network:11443
+DOMAIN-SUFFIX,e-hentai.org,"US" // Added for: e-hentai.org:443
 URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/show\?.*,REJECT
 DEST-PORT,22,DIRECT
 DOMAIN-KEYWORD,-remad.qm989.com,REJECT,pre-matching,extended-matching // Added for: https://t-remad.qm989.com/api/ad/union/sdk/v1/data
