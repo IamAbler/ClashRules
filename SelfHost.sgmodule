@@ -1,0 +1,45 @@
+#!name= SelfHost
+#!desc= 自用N in 1模块
+
+[Rule]
+DOMAIN-SUFFIX,exhentai.org," 美国标准 IEPL 专线 3",extended-matching
+DOMAIN-SUFFIX,hath.network," 美国实验性 IEPL 专线 1" // Added for: zueejfw.ncvjvrxvkauq.hath.network:11443
+DOMAIN-SUFFIX,e-hentai.org," 美国标准 IEPL 专线 3" // Added for: e-hentai.org:443
+URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/show\?.*,REJECT
+DEST-PORT,22,DIRECT
+DOMAIN-KEYWORD,-remad.qm989.com,REJECT,pre-matching,extended-matching // Added for: https://t-remad.qm989.com/api/ad/union/sdk/v1/data
+URL-REGEX,^https:\/\/t-remad\.qm989\.com\/api\/ad\/union\/sdk\/v1\/data$,REJECT // Added for: https://t-remad.qm989.com/api/ad/union/sdk/v1/data
+URL-REGEX,^https:\/\/a6-remad\.qm989\.com\/v4\/get-ads\/index$,REJECT // Added for: https://a6-remad.qm989.com/v4/get-ads/index
+DOMAIN-SUFFIX,tanx.com,REJECT,pre-matching,extended-matching // Added for: https://et.tanx.com/tsbpm?id=e4ff7e16ee6b63f9231a16694f99a5b6abe8303cae08824b947c6f5fa04d423e
+DOMAIN-SUFFIX,cdn-new-ad.wtzw.com,REJECT,pre-matching,extended-matching // Added for: https://cdn-new-ad.wtzw.com/commerce/attachment/202503/2utiosImAk4uzXiM6CDVWaJ8H5u.jpg
+DOMAIN,ir-sdk.dun.163.com,REJECT,pre-matching,extended-matching
+DOMAIN,ubixioe.com,REJECT,pre-matching,extended-matching
+DOMAIN,s3plus.meituan.net,REJECT,extended-matching
+DOMAIN-SUFFIX,aiclk.com,REJECT,pre-matching,extended-matching
+DOMAIN,mobads-pre-config.cdn.bcebos.com,REJECT,pre-matching,extended-matching
+DOMAIN,afd.baidu.com,REJECT
+DOMAIN,mobads-logs.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN,ssp.1rtb.com,REJECT,pre-matching,extended-matching
+DOMAIN,mssdk.volces.com,REJECT,pre-matching,extended-matching
+DOMAIN-KEYWORD,zijieapi,REJECT,pre-matching
+DOMAIN-SUFFIX,adukwai.com,REJECT,pre-matching,extended-matching
+DOMAIN,adsmind.ugdtimg.com,REJECT,pre-matching,extended-matching
+DOMAIN,mobads.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN-KEYWORD,-toutiao,REJECT,pre-matching,extended-matching
+DOMAIN,open.e.kuaishou.com,REJECT,pre-matching,extended-matching
+DOMAIN,apimobile.meituan.com,REJECT,pre-matching,extended-matching
+DOMAIN,open.e.kuaishou.cn,REJECT,pre-matching,extended-matching
+DOMAIN,sdk.e.qq.com,REJECT,pre-matching,extended-matching
+DOMAIN,im-x.jd.com,REJECT,pre-matching,extended-matching
+DOMAIN,als.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN,gdfp.gifshow.com,REJECT,pre-matching,extended-matching
+DOMAIN,bgg.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN,sofire.baidu.com,REJECT,pre-matching,extended-matching
+DOMAIN,mantis.bayescom.com,REJECT,pre-matching,extended-matching
+DOMAIN,mi.gdt.qq.com,REJECT,pre-matching
+DOMAIN,sdk.1rtb.net,REJECT,pre-matching,extended-matching
+DOMAIN,toblog.ctobsnssdk.com,REJECT,pre-matching,extended-matching
+DOMAIN,tnc3-alisc1.zijieapi.com,REJECT,pre-matching,extended-matching
+
+[Host]
+*.wzbc.edu.cn = server:syslib
