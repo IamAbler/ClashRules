@@ -51,7 +51,7 @@ if ($network.dns && $network.dns.ips && $network.dns.ips.length > 0) {
     // 没有缓存 IP，尝试主动查询
     if ($domain) {
         console.log(`No cached IP for ${$domain}, performing lookup...`);
-        $httpClient.get(`https://dns.google/resolve?name=${$domain}&type=A`, function(error, response, data) {
+        $httpClient.get(`https://223.5.5.5/resolve?name=${$domain}&type=A`, function(error, response, data) {
             if (error || !data) {
                 $done({});
                 return;
