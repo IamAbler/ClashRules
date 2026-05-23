@@ -2,6 +2,7 @@
 #!desc= 自用N in 1模块
 
 [Rule]
+DOMAIN-SUFFIX,yfanads.com,REJECT
 URL-REGEX,^https:\/\/app\.bilibili\.com\/x\/v2\/splash\/show\?.*,REJECT
 DOMAIN-KEYWORD,-remad.qm989.com,REJECT,pre-matching,extended-matching // Added for: https://t-remad.qm989.com/api/ad/union/sdk/v1/data
 URL-REGEX,^https:\/\/t-remad\.qm989\.com\/api\/ad\/union\/sdk\/v1\/data$,REJECT // Added for: https://t-remad.qm989.com/api/ad/union/sdk/v1/data
